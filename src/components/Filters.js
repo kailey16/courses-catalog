@@ -37,18 +37,20 @@ const Filters = (props) => {
         </form>
       </div>
 
-      <div id="radioButtons">
-          <input type="radio" name="paidOption" name="paid" value="Paid" checked={props.paid} onChange={props.paidChanged}/>
-          <label htmlFor="paid">
-            Paid
-          </label>
-
-          <input type="radio" name="paidOption" name="unpaid" value="Unpaid" checked={!props.paid} onChange={props.paidChanged}/>
-          <label htmlFor="unpaid">
-            Unpaid
-          </label>
-
+      <div>
+        <form className="form-inline">
+          <div className="form-group">
+            <label htmlFor="paidDropdown">Paid</label>
+            <select id="paidDropdown" className="form-control dropdowns" onChange={props.paidChange} value={props.paid}>
+              <option>All</option>
+              <option>Paid</option>
+              <option>Unpaid</option>
+            </select>
+          </div>
+        </form>
       </div>
+
+      <button type="button" class="btn btn-primary showallBtn" onClic={props.showAllClicked}>Show All</button>
 
     </div>
   )

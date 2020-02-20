@@ -30,19 +30,19 @@ label {
 }
 
 
-/* Filters & Radios */
+/* Filters*/
 #filters {
   display: grid;
-  grid-template-columns: 16vw 16vw 15vw;
-  margin: 3vh 0 3vh 51vw;
+  grid-template-columns: 16vw 14.5vw 9vw 8vw;
+  margin: 3vh 0 3vh 44vw;
+}
+
+.showallBtn {
+  width: 7vw;
 }
 
 .dropdowns {
   margin-left: 0.5vw;
-}
-
-#radioButtons {
-  margin-top: 0.6vh;
 }
 
 

@@ -11,10 +11,9 @@ class Home extends React.Component {
     searchTerm: "",
     type: "",
     subject: "",
-    paid: true,
+    paid: "",
     allCourses: courseList,
-    showingCourses: courseList.filter(c => c.paid),
-    selectedCourse: {}
+    showingCourses: courseList
   }
 
   changeSearchTerm = (e) => {
@@ -24,12 +23,20 @@ class Home extends React.Component {
   searchTermSubmit = (e) => {
     e.preventDefault()
     const coursesWithSearchTerm = this.state.allCourses.filter(c => c.title.includes(this.state.searchTerm))
-    this.setState({showingCourses: coursesWithSearchTerm, searchTerm: ""})
+    this.setState({showingCourses: coursesWithSearchTerm, searchTerm: "", type: "All", subject: "All"})
   }
 
   paidChange = (e) => {
-    const paidornot = e.target.name === "paid" ? true : false
-    this.setState({paid: paidornot})
+    let courses;
+    if (e.target.value === "All") {
+      courses = this.state.allCourses
+    } else if (e.target.value === "Paid") {
+      courses = this.state.allCourses.filter(c => c.paid)
+    } else {
+      courses = this.state.allCourses.filter(c => c.paid === false)
+    }
+
+    this.setState({paid: e.target.value, type: "All", subject: "All", showingCourses: courses})
   }
 
   typeChange = (e) => {
@@ -42,6 +49,16 @@ class Home extends React.Component {
     this.setState({subject: e.target.value, type: "All", showingCourses: courses})
   }
 
+  showAllClicked = () => {
+    this.setState({
+    searchTerm: "",
+    type: "",
+    subject: "",
+    paid: "",
+    showingCourses: courseList
+    })
+  }
+
   render() {
     return (
       <div id="Home">
@@ -51,7 +68,7 @@ class Home extends React.Component {
         </div>
       
         <Searchbar changeSearchTerm={this.changeSearchTerm} searchTerm={this.state.searchTerm} searchTermSubmit={this.searchTermSubmit}/>
-        <Filters paid={this.state.paid} paidChange={this.paidChange} typeChange={this.typeChange} type={this.state.type} subjectChange={this.subjectChange} subject={this.state.subject}/>
+        <Filters paid={this.state.paid} paidChange={this.paidChange} typeChange={this.typeChange} type={this.state.type} subjectChange={this.subjectChange} subject={this.state.subject} showAllClicked={this.showAllClicked}/>
         <CoursesContainer showingCourses={this.state.showingCourses}/>
       </div>
     )
