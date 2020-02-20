@@ -13,6 +13,14 @@
   padding: 2vh 0 2vh 0;
 }
 
+.btn {
+  font-weight: 500;
+}
+
+label {
+  font-weight: 600;
+}
+
 
 /* SearchBar */
 #searchbar {
@@ -22,11 +30,6 @@
 
 #searchBox {
   width: 30vw;
-}
-
-#searchSubmitButton {
-  margin-left: 1vw;
-  font-weight: 600;
 }
 
 
@@ -41,13 +44,8 @@
   margin-left: 0.5vw;
 }
 
-
 #radioButtons {
   margin-top: 0.6vh;
-}
-
-label {
-  font-weight: 600;
 }
 
 
@@ -60,10 +58,30 @@ label {
   margin-left: 9.5vw;
 }
 
-.card {
-  width: 25vw;
+.card-title {
+  font-size: 1.5vw;
+  font-weight: 600;
 }
 
-.card-title {
+.description {
+  height: 22vh;
+  overflow: auto;
+  margin-bottom: 2vh;
+}
+
+.description p {
+  margin: 0;
+}
+
+.description p span {
   font-weight: 600;
+  font-size: 1.3vw;
+}
+
+.btnGap {
+  margin-left: 0.5vw;
+}
+
+.askBtn {
+  padding: 0;
 }

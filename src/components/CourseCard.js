@@ -6,9 +6,27 @@ const CourseCard = (props) => {
     <div className="card">
       <img src={cardImg} className="card-img-top" alt="course preview" />
       <div className="card-body">
-        <h5 className="card-title">{props.course.title}</h5>
-        <p className="card-text">This online program aims to provide an overview of genomic medicine and pharmacogenetics and review specialties where advancements in pharmacogenetics can improve the quality of care.</p>
-        <a href="#" className="btn btn-primary">Learn more</a>
+        <h5 className="card-title">
+          {props.course.title}
+          <a href="#" className="btn btn-link">Learn more</a>
+          <button type="button" class="btn btn-link askBtn">Ask About</button>
+        </h5>
+        
+        <div className="description card-text">
+          <p>
+            <span>Course Type</span> {props.course.coursetype.join(", ")}
+          </p>
+          <p>
+            <span>Paid?</span> {props.course.paid ? "Yes" : "No"}
+          </p>
+          <p>
+            <span>Course overview</span><br/>
+            The program aims to provide an overview of genomic medicine and pharmacogenetics, review specialties where advancements in pharmacogenetics can improve the quality of care, and offer perspective from leading experts in how pharmacogenetics can transform clinical practice.
+          </p>
+        </div>
+
+        <button type="button" className="btn btn-primary">Enroll</button>
+        <button type="button" class="btn btn-primary btnGap">SaveForLater</button>
       </div>
     </div>
   )

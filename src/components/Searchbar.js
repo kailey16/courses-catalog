@@ -7,7 +7,7 @@ const SearchAndFilters = () => {
         <div className="form-group">
           <input type="text" id="searchBox" className="form-control" />
         </div>
-        <input type="submit" id="searchSubmitButton" className="btn btn-primary" value="Search" />
+        <button type="submit" id="searchSubmitButton" className="btn btn-primary btnGap">Search</button>
       </form>
     </div>
   )
