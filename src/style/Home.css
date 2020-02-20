@@ -6,6 +6,12 @@
   background-size: cover; */
 }
 
+#homeText {
+  text-align: center;
+  color: navy;
+  margin-top: 2vh;
+}
+
 
 /* SearchBar */
 #searchbar {
