@@ -1,9 +1,10 @@
 import React from 'react'
 
-const CourseDetail = () => {
+const CourseDetail = (props) => {
+  console.log(props)
   return (
     <div>
-      CourseDetail
+      <img />
     </div>
   )
 }

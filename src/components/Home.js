@@ -69,7 +69,7 @@ class Home extends React.Component {
       
         <Searchbar changeSearchTerm={this.changeSearchTerm} searchTerm={this.state.searchTerm} searchTermSubmit={this.searchTermSubmit}/>
         <Filters paid={this.state.paid} paidChange={this.paidChange} typeChange={this.typeChange} type={this.state.type} subjectChange={this.subjectChange} subject={this.state.subject} showAllClicked={this.showAllClicked}/>
-        <CoursesContainer showingCourses={this.state.showingCourses}/>
+        <CoursesContainer showingCourses={this.state.showingCourses} courseSelected={this.props.courseSelected}/>
       </div>
     )
   }

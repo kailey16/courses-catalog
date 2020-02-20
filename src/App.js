@@ -11,11 +11,15 @@ class App extends React.Component {
     selectedCourse: {}
   }
 
+  courseSelected = (course) => {
+    this.setState({selectedCourse: course})
+  }
+
   render() { 
     return (
       <div className="App">
         <Navbar />
-        <Route exact path="/" component={Home} />} />
+        <Route exact path="/" render={() => <Home courseSelected={this.courseSelected}/>} />
         <Route exact path="/courseDetail" render={() => <CourseDetail course={this.state.selectedCourse}/>} />
       </div>
     );

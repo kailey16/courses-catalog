@@ -1,5 +1,6 @@
 import React from 'react'
 import cardImg from '../media/logo4.png'
+import { Link } from 'react-router-dom'
 
 const CourseCard = (props) => {
   return (
@@ -8,7 +9,10 @@ const CourseCard = (props) => {
       <div className="card-body">
         <h5 className="card-title">
           {props.course.title}
-          <a href="#" className="btn btn-link">Learn more</a>
+
+          <Link to="/courseDetail">
+            <button href="/course" className="btn btn-link" onClick={() => props.courseSelected(props.course)}>Learn more</button>
+          </Link>
           <button type="button" className="btn btn-link askBtn">Ask About</button>
         </h5>
         
