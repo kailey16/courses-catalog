@@ -17,6 +17,9 @@ const CourseCard = (props) => {
             <span>Course Type</span> {props.course.coursetype.join(", ")}
           </p>
           <p>
+            <span>Subject</span> {props.course.subject.join(", ")}
+          </p>
+          <p>
             <span>Paid?</span> {props.course.paid ? "Yes" : "No"}
           </p>
           <p>
