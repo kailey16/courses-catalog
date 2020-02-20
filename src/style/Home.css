@@ -26,13 +26,14 @@
 
 #searchSubmitButton {
   margin-left: 1vw;
+  font-weight: 600;
 }
 
 
 /* Filters & Radios */
 #filters {
   display: grid;
-  grid-template-columns: 16vw 18vw 15vw;
+  grid-template-columns: 16vw 16vw 15vw;
   margin: 3vh 0 3vh 51vw;
 }
 
@@ -45,6 +46,10 @@
   margin-top: 0.6vh;
 }
 
+label {
+  font-weight: 600;
+}
+
 
 /* Courses */
 #CoursesContainer {
@@ -54,6 +59,11 @@
   grid-row-gap: 3vh;
   margin-left: 9.5vw;
 }
+
 .card {
   width: 25vw;
+}
+
+.card-title {
+  font-weight: 600;
 }

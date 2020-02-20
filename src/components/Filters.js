@@ -23,7 +23,7 @@ const Filters = () => {
       <div>
         <form className="form-inline">
           <div className="form-group">
-            <label htmlFor="subjectDropdown">Course Types</label>
+            <label htmlFor="subjectDropdown">Subject</label>
             <select id="subjectDropdown" className="form-control dropdowns">
               <option>Subject option 1</option>
               <option>Subject option 2</option>
