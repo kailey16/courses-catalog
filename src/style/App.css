@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500,600&display=swap');
+
 body {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 500;
   font-size: 1.2vw;
   background-color: rgb(242, 246, 250);
-
 }
 
 /* NAVBAR */
 .navbar {
-/* background-color: rgb(46, 75, 240) !important; */
 background-color: white !important;
 }
 
