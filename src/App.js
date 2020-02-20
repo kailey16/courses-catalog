@@ -11,7 +11,7 @@ class App extends React.Component {
     selectedCourse: {}
   }
 
-  render() {
+  render() { 
     return (
       <div className="App">
         <Navbar />
