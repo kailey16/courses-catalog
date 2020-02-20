@@ -1,0 +1,52 @@
+#Home {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('../media/logo4.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+/* SearchBar */
+#searchbar {
+  width: 40vw;
+  margin: 5vh 0 0 30vw;
+}
+
+#searchBox {
+  width: 30vw;
+}
+
+#searchSubmitButton {
+  margin-left: 1vw;
+}
+
+
+/* Filters & Radios */
+#filters {
+  display: grid;
+  grid-template-columns: 16vw 18vw 15vw;
+  margin: 3vh 0 3vh 51vw;
+}
+
+.dropdowns {
+  margin-left: 0.5vw;
+}
+
+
+#radioButtons {
+  margin-top: 0.6vh;
+}
+
+
+/* Courses */
+#CoursesContainer {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vh;
+  margin-left: 9.5vw;
+}
+.card {
+  width: 25vw;
+}

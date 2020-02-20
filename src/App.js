@@ -1,9 +1,7 @@
 import React from 'react';
-import './App.css';
 import { Route } from 'react-router-dom';
-import Navbar from './components/Navbar'
-import SearchAndFilters from './components/SearchAndFilters'
-import CoursesContainer from './components/CoursesContainer'
+import './style/App.css';
+import Home from './components/Home'
 import CourseDetail from './components/CourseDetail'
 
 
@@ -15,10 +13,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
-        <SearchAndFilters />
-        <CoursesContainer />
-        <Route exact path="/courseDetail" render={() => <CourseDetail course={this.state.selectedCourse} />} />
+        <Route exact path="/" component={Home} />} />
+        <Route exact path="/courseDetail" render={() => <CourseDetail course={this.state.selectedCourse}/>} />
       </div>
     );
   }
