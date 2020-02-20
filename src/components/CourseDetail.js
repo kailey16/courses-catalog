@@ -16,7 +16,7 @@ const CourseDetail = (props) => {
           <h4>Subject</h4>
           <h5>{subject.join(", ")}</h5>
           <h4>Paid?</h4>
-          <h5>{paid ? "Yes" : "No"}</h5><br/>
+          <h5>{paid === "Paid" ? "Yes" : "No"}</h5><br/>
           <button type="button" className="btn btn-primary btnDetail">Ask About</button>   
           <button type="button" className="btn btn-primary btnDetail">SaveForLater</button>
           <button type="button" className="btn btn-primary btnDetail">Enroll</button>

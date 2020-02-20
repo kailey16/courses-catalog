@@ -23,30 +23,22 @@ class Home extends React.Component {
   searchTermSubmit = (e) => {
     e.preventDefault()
     const coursesWithSearchTerm = this.state.allCourses.filter(c => c.title.includes(this.state.searchTerm))
-    this.setState({showingCourses: coursesWithSearchTerm, searchTerm: "", type: "All", subject: "All"})
+    this.setState({showingCourses: coursesWithSearchTerm, searchTerm: "", type: "All", subject: "All", paid: "All"})
   }
 
   paidChange = (e) => {
-    let courses;
-    if (e.target.value === "All") {
-      courses = this.state.allCourses
-    } else if (e.target.value === "Paid") {
-      courses = this.state.allCourses.filter(c => c.paid)
-    } else {
-      courses = this.state.allCourses.filter(c => c.paid === false)
-    }
-
+    let courses = e.target.value === "All" ? this.state.allCourses : this.state.allCourses.filter(c => c.paid === e.target.value)
     this.setState({paid: e.target.value, type: "All", subject: "All", showingCourses: courses})
   }
 
   typeChange = (e) => {
     let courses = e.target.value === "All" ? this.state.allCourses : this.state.allCourses.filter(c => c.coursetype.includes(e.target.value))
-    this.setState({type: e.target.value, subject: "All", showingCourses: courses})
+    this.setState({type: e.target.value, subject: "All", showingCourses: courses, paid: "All"})
   }
 
   subjectChange = (e) => {
     let courses = e.target.value === "All" ? this.state.allCourses : this.state.allCourses.filter(c => c.subject.includes(e.target.value))
-    this.setState({subject: e.target.value, type: "All", showingCourses: courses})
+    this.setState({subject: e.target.value, type: "All", showingCourses: courses, paid: "All"})
   }
 
   showAllClicked = () => {

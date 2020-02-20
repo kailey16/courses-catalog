@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Filters = (props) => {
-  console.log(props)
+  
   return (
     <div id="filters">
 
