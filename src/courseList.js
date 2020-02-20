@@ -1,8 +1,8 @@
-export const coursetypes = [
+const coursetypes = [
   "Online Class", "In-Class", "Private Class", "Live Webinar", "Game"
 ]
 
-export const courseList = [
+const courseList = [
   {
     id: 1,
     title: "course1",
@@ -102,3 +102,5 @@ export const courseList = [
     overview: "description of course14"
   }
 ]
+
+export default courseList

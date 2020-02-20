@@ -1,6 +1,6 @@
 import React from 'react'
 import CourseCard from './CourseCard'
-import {courseList} from '../courseList'
+import courseList from '../courseList'
 
 const CoursesContainer = () => {
   return (
