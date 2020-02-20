@@ -3,15 +3,19 @@
   margin: 3vh 15vw 0 15vw;
 }
 .CourseDetail h4 {
-  background-color: rgb(27, 58, 231);
+  background-color: rgb(66, 138, 206);
   color: white;
-  width: 15vw;
-  padding: 0 1vw 0 1vw;
+  width: 13vw;
+  padding-left: 1vw;
+  border-radius: 15%;
 }
+
+
 
 .CourseDetailTop {
   display: grid;
-  grid-template-columns: 40vw 30vw;
+  grid-template-columns: 35vw 30vw;
+  grid-column-gap: 5vw;
 }
 
 .courseTitle {
@@ -27,11 +31,19 @@
   margin-top: 2vh;
 }
 
+
+
 .CourseDetailBottom {
-  margin-top: 5vh;
+  margin: 5vh 0 2vh 0;
+}
+
+.btnDetail {
+  background-color: rgb(9, 39, 209) !important;
+  border-color: rgb(9, 39, 209) !important;
+  margin-right: 0.5vw;
 }
 
 .backToCourses {
-  margin: 2vh 0 0 0;
   font-weight: 500;
 }
+
