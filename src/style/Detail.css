@@ -1,0 +1,37 @@
+/* Course detail page */
+.CourseDetail {
+  margin: 3vh 15vw 0 15vw;
+}
+.CourseDetail h4 {
+  background-color: rgb(27, 58, 231);
+  color: white;
+  width: 15vw;
+  padding: 0 1vw 0 1vw;
+}
+
+.CourseDetailTop {
+  display: grid;
+  grid-template-columns: 40vw 30vw;
+}
+
+.courseTitle {
+  margin-bottom: 1vh;
+}
+
+.courseDetailImg {
+  width: 35vw;
+  height: auto;
+}
+
+.detailText {
+  margin-top: 2vh;
+}
+
+.CourseDetailBottom {
+  margin-top: 5vh;
+}
+
+.backToCourses {
+  margin: 2vh 0 0 0;
+  font-weight: 500;
+}

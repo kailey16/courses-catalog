@@ -30,7 +30,7 @@ label {
 }
 
 
-/* Filters*/
+/* Filters */
 #filters {
   display: grid;
   grid-template-columns: 16vw 14.5vw 9vw 8vw;
