@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Filters = () => {
+const Filters = (props) => {
+  console.log(props)
   return (
     <div id="filters">
 
@@ -8,7 +9,7 @@ const Filters = () => {
         <form className="form-inline">
           <div className="form-group">
             <label htmlFor="typeDropdown">Course Types</label>
-            <select id="typeDropdown" className="form-control dropdowns">
+            <select id="typeDropdown" className="form-control dropdowns" onChange={props.typeChange} value={props.type}>
               <option>All</option>
               <option>Online Class</option>
               <option>In-Class</option>
@@ -24,7 +25,8 @@ const Filters = () => {
         <form className="form-inline">
           <div className="form-group">
             <label htmlFor="subjectDropdown">Subject</label>
-            <select id="subjectDropdown" className="form-control dropdowns">
+            <select id="subjectDropdown" className="form-control dropdowns" onChange={props.subjectChange} value={props.subject}>
+              <option>All</option>
               <option>Subject option 1</option>
               <option>Subject option 2</option>
               <option>Subject option 3</option>
@@ -36,18 +38,16 @@ const Filters = () => {
       </div>
 
       <div id="radioButtons">
-        <div className="form-check form-check-inline">
-          <input className="form-check-input" type="radio" name="paidOption" id="paid" value="Paid" checked />
-          <label className="form-check-label" htmlFor="paid">
+          <input type="radio" name="paidOption" name="paid" value="Paid" checked={props.paid} onChange={props.paidChanged}/>
+          <label htmlFor="paid">
             Paid
           </label>
-        </div>
-        <div className="form-check form-check-inline">
-          <input className="form-check-input" type="radio" name="paidOption" id="unpaid" value="Unpaid" />
-          <label className="form-check-label" htmlFor="unpaid">
+
+          <input type="radio" name="paidOption" name="unpaid" value="Unpaid" checked={!props.paid} onChange={props.paidChanged}/>
+          <label htmlFor="unpaid">
             Unpaid
           </label>
-        </div>
+
       </div>
 
     </div>

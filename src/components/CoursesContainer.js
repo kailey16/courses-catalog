@@ -1,11 +1,10 @@
 import React from 'react'
 import CourseCard from './CourseCard'
-import courseList from '../courseList'
 
-const CoursesContainer = () => {
+const CoursesContainer = (props) => {
   return (
     <div id="CoursesContainer">
-      {courseList.map(courseInfo => <CourseCard key={courseInfo.id} course={courseInfo}/>)}
+      {props.showingCourses.map(courseInfo => <CourseCard key={courseInfo.id} course={courseInfo}/>)}
     </div>
   )
 }

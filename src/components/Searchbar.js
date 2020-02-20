@@ -1,16 +1,16 @@
 import React from 'react'
 
-const SearchAndFilters = () => {
+const SearchBar = (props) => {
   return (
     <div>
-      <form id="searchbar" className="form-inline">
+      <form id="searchbar" className="form-inline" onSubmit={props.searchTermSubmit}>
         <div className="form-group">
-          <input type="text" id="searchBox" className="form-control" />
+          <input type="text" id="searchBox" className="form-control" onChange={props.changeSearchTerm} value={props.searchTerm}/>
         </div>
-        <button type="submit" id="searchSubmitButton" className="btn btn-primary btnGap">Search</button>
+        <input type="submit" id="searchSubmitButton" className="btn btn-primary btnGap" value="Search" />
       </form>
     </div>
   )
 }
 
-export default SearchAndFilters
+export default SearchBar

@@ -9,7 +9,7 @@ const CourseCard = (props) => {
         <h5 className="card-title">
           {props.course.title}
           <a href="#" className="btn btn-link">Learn more</a>
-          <button type="button" class="btn btn-link askBtn">Ask About</button>
+          <button type="button" className="btn btn-link askBtn">Ask About</button>
         </h5>
         
         <div className="description card-text">
@@ -26,7 +26,7 @@ const CourseCard = (props) => {
         </div>
 
         <button type="button" className="btn btn-primary">Enroll</button>
-        <button type="button" class="btn btn-primary btnGap">SaveForLater</button>
+        <button type="button" className="btn btn-primary btnGap">SaveForLater</button>
       </div>
     </div>
   )
