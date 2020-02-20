@@ -7,7 +7,8 @@ body {
 
 /* NAVBAR */
 .navbar {
-background-color: rgb(46, 75, 240) !important;
+/* background-color: rgb(46, 75, 240) !important; */
+background-color: white !important;
 }
 
 #navLogo {

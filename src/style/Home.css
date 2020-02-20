@@ -8,8 +8,9 @@
 
 #homeText {
   text-align: center;
-  color: navy;
-  margin-top: 2vh;
+  color: white;
+  background-color: rgb(9, 39, 209);
+  padding: 2vh 0 2vh 0;
 }
 
 
