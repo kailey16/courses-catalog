@@ -5,6 +5,7 @@ import '../style/Detail.css'
 
 const CourseDetail = (props) => {
   const {title, coursetype, subject, paid, overview} = props.course
+
   return (
     <div className="CourseDetail">
       <div className="CourseDetailTop">
@@ -25,7 +26,7 @@ const CourseDetail = (props) => {
 
       <div className="CourseDetailBottom">
         <h4>Course overview</h4>
-        <h5>The program aims to provide an overview of genomic medicine and pharmacogenetics, review specialties where advancements in pharmacogenetics can improve the quality of care, and offer perspective from leading experts in how pharmacogenetics can transform clinical practice.</h5>
+        <h5>{overview}, The program aims to provide an overview of genomic medicine and pharmacogenetics, review specialties where advancements in pharmacogenetics can improve the quality of care, and offer perspective from leading experts in how pharmacogenetics can transform clinical practice.</h5>
       </div>
 
       <Link to="/">

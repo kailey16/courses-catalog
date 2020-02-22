@@ -5,7 +5,7 @@ const courseList = [
     coursetype: ["Online Class", "In-Class"],
     subject: ["Subject option 1"],
     paid: "Paid",
-    overview: "description of course1"
+    overview: "Description of course1"
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const courseList = [
     coursetype: ["Online Class", "In-Class"],
     subject: ["Subject option 1"],
     paid: "Unpaid",
-    overview: "description of course2"
+    overview: "Description of course2"
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const courseList = [
     coursetype: ["Private Class", "Live Webinar"],
     subject: ["Subject option 2"],
     paid: "Paid",
-    overview: "description of course3"
+    overview: "Description of course3"
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const courseList = [
     coursetype: ["Online Class"],
     subject: ["Subject option 3"],
     paid: "Paid",
-    overview: "description of course4"
+    overview: "Description of course4"
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const courseList = [
     coursetype: ["Online Class", "Live Webinar"],
     subject: ["Subject option 4"],
     paid: "Unpaid",
-    overview: "description of course5"
+    overview: "Description of course5"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const courseList = [
     coursetype: ["In-Class", "Game"],
     subject: ["Subject option 5"],
     paid: "Paid",
-    overview: "description of course6"
+    overview: "Description of course6"
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const courseList = [
     coursetype: ["In-Class", "Live Webinar"],
     subject: ["Subject option 5"],
     paid: "Paid",
-    overview: "description of course7"
+    overview: "Description of course7"
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const courseList = [
     coursetype: ["Online Class", "In-Class"],
     subject: ["Subject option 5"],
     paid: "Unpaid",
-    overview: "description of course8"
+    overview: "Description of course8"
   },  
   {
     id: 9,
@@ -69,7 +69,7 @@ const courseList = [
     coursetype: ["In-Class", "Private Class", "Game"],
     subject: ["Subject option 3"],
     paid: "Unpaid",
-    overview: "description of course9"
+    overview: "Description of course9"
   },  
   {
     id: 10,
@@ -77,7 +77,7 @@ const courseList = [
     coursetype: ["Private Class"],
     subject: ["Subject option 1"],
     paid: "Paid",
-    overview: "description of course10"
+    overview: "Description of course10"
   },
   {
     id: 11,
@@ -86,7 +86,7 @@ const courseList = [
     "In-Class", "Game"],
     subject: ["Subject option 2"],
     paid: "Paid",
-    overview: "description of course11"
+    overview: "Description of course11"
   },
   {
     id: 12,
@@ -94,7 +94,7 @@ const courseList = [
     coursetype: ["In-Class", "Live Webinar"],
     subject: ["Subject option 4"],
     paid: "Paid",
-    overview: "description of course12"
+    overview: "Description of course12"
   },
   {
     id: 13,
@@ -102,7 +102,7 @@ const courseList = [
     coursetype: ["In-Class", "Private Class", "Game"],
     subject: ["Subject option 2"],
     paid: "Unpaid",
-    overview: "description of course13"
+    overview: "Description of course13"
   },  
   {
     id: 14,
@@ -110,7 +110,7 @@ const courseList = [
     coursetype: ["Online Class"],
     subject: ["Subject option 3"],
     paid: "Paid",
-    overview: "description of course14"
+    overview: "Description of course14"
   }
 ]
 
