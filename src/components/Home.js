@@ -27,18 +27,15 @@ class Home extends React.Component {
   }
 
   paidChange = (e) => {
-    let courses = e.target.value === "All" ? this.state.allCourses : this.state.allCourses.filter(c => c.paid === e.target.value)
-    this.setState({paid: e.target.value, type: "All", subject: "All", showingCourses: courses})
+    this.setState({paid: e.target.value})
   }
 
   typeChange = (e) => {
-    let courses = e.target.value === "All" ? this.state.allCourses : this.state.allCourses.filter(c => c.coursetype.includes(e.target.value))
-    this.setState({type: e.target.value, subject: "All", showingCourses: courses, paid: "All"})
+    this.setState({type: e.target.value})
   }
 
   subjectChange = (e) => {
-    let courses = e.target.value === "All" ? this.state.allCourses : this.state.allCourses.filter(c => c.subject.includes(e.target.value))
-    this.setState({subject: e.target.value, type: "All", showingCourses: courses, paid: "All"})
+    this.setState({subject: e.target.value})
   }
 
   showAllClicked = () => {
